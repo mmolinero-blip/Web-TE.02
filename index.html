@@ -1,0 +1,93 @@
+<!-- 
+Autor: Mireia Molinero Pavo
+Asignatura: LMSGI
+Unidad: UD 02 - Desarrollo web con HTML5 y CSS3
+Tarea: Tarea Evaluativa 02 - Desarrollar el sitio web diseñado en la tarea anterior
+Fecha: 24/10/2025
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Mi Sitio Web</title>
+  <!-- Módulo: LMSGI | Unidad 2 | Tarea Evaluativa 02 | Autor: [Tu nombre] | Fecha: [fecha actual] -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!-- ============================= -->
+  <!-- CABECERA PRINCIPAL -->
+  <!-- ============================= -->
+  <header class="cabecera-principal">
+    <div class="contenedor contenedor-header">
+      <!-- LOGO -->
+      <img src="img/logo.png" alt="Logo del sitio" class="logo">
+
+      <!-- Título principal -->
+      <h1 class="titulo-pagina">Soluciones digitales para Hostelería</h1>
+    </div>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================= -->
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- ============================= -->
+  <main class="contenedor main-index">
+    <!-- Parte izquierda: Presentación + Categoría destacada -->
+    <div class="main-izquierda">
+      
+      <!-- SECCION: Presentación del sitio -->
+      <section class="section presentacion">
+        <h2>Somos consultores tecnológicos</h2>
+        <p>
+          La transformación digital debe ser la llave hacia la profesionalización y 
+          adaptación del sector Horeca a la nueva era digital, con el fin de ser más 
+          rentables y competitivos.
+        </p>
+        <p>
+          Ofrecemos soluciones tecnológicas integrales para la gestión de negocios 
+          de hostelería y restauración, adaptándonos a las necesidades específicas 
+          de cada cliente.
+        </p>
+      </section>
+
+      <!-- SECCION: Categoría destacada -->
+      <section class="section categoria-destacada" aria-labelledby="destacado-tpv">
+        <img src="img/tpv.jpg" alt="Terminal Punto de Venta - TPV" class="img-categoria">
+
+        <div class="texto-categoria">
+          <h2 id="destacado-tpv">TPV — Categoría destacada</h2>
+          <p>
+            Los sistemas TPV (Terminal Punto de Venta) son herramientas esenciales para gestionar cobros,
+            pedidos y facturación de manera ágil. Ideales para restaurantes, cafeterías y comercios.
+          </p>
+          <a href="productos.html#tpv" class="boton">Saber más</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Parte derecha: Imagen de presentación -->
+    <div class="main-derecha">
+      <img src="img/presentacion.png" alt="Imagen de presentación" class="imagen-principal">
+    </div>
+  </main>
+
+  <!-- ============================= -->
+  <!-- PIE DE PÁGINA -->
+  <!-- ============================= -->
+  <footer class="pie-pagina">
+    <a href="https://creativecommons.org">LMGSI TE.02 birt </a> © 2025 by <a href="https://creativecommons.org">Mireia Molinero Pavo</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+  </footer>
+</body>
+</html>

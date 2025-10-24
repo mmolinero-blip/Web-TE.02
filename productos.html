@@ -1,0 +1,95 @@
+<!-- 
+Autor: Mireia Molinero Pavo
+Asignatura: LMSGI
+Unidad: UD 02 - Desarrollo web con HTML5 y CSS3
+Tarea: Tarea Evaluativa 02 - Desarrollar el sitio web diseñado en la tarea anterior
+Fecha: 24/10/2025
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos TPV - Mi Sitio Web</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <!-- CABECERA -->
+  <header class="cabecera-principal">
+    <div class="contenedor-header">
+      <img src="img/logo.png" alt="Logo del sitio" class="logo">
+      <h1 class="titulo-pagina">Soluciones digitales para Hostelería</h1>
+    </div>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu-navegacion">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="categorias.html" class="activo">Categorías</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="contenedor productos">
+    <!-- Introducción categoría -->
+    <section class="intro-categoria">
+      <h2>Productos TPV</h2>
+      <p>
+        Los sistemas TPV permiten gestionar ventas, cobros y pedidos de forma eficiente.  
+        Aquí encontrarás nuestras soluciones más destacadas en software, hardware y dispositivos complementarios.
+      </p>
+    </section>
+
+    <!-- GRID DE PRODUCTOS -->
+    <section class="grid">
+
+      <!-- PRODUCTO 1 -->
+      <article class="tarjeta">
+        <div class="contenido">
+          <img src="img/productos/tpv/revo-xef.png" alt="Software Revo Xef" class="imagen">
+          <div class="informacion">
+            <h3>Software Revo Xef</h3>
+            <p>Aplicación avanzada para la gestión de hostelería: control de mesas, comandas digitales y menús dinámicos.</p>
+          </div>
+          <a href="detalleproducto.html" class="boton">Más info</a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 2 -->
+      <article class="tarjeta">
+        <div class="contenido">
+          <img src="img/productos/tpv/comanderos.png" alt="iPads y comanderos" class="imagen">
+          <div class="informacion">
+            <h3>iPads / Comanderos</h3>
+            <p>Dispositivos táctiles que facilitan la toma de comandas y la comunicación directa con la cocina o el bar.</p>
+          </div>
+          <a href="detalleproducto.html" class="boton">Más info</a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 3 -->
+      <article class="tarjeta">
+        <div class="contenido">
+          <img src="img/productos/tpv/impresora.jpg" alt="Impresoras TPV" class="imagen">
+          <div class="informacion">
+            <h3>Impresoras TPV</h3>
+            <p>Impresoras térmicas rápidas y silenciosas, ideales para tickets o comandas en locales de hostelería.</p>
+          </div>
+          <a href="detalleproducto.html" class="boton">Más info</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie-pagina">
+    <p>&copy; 2025 Mireia Molinero Pavo. Todos los derechos reservados.</p>
+    <p>Proyecto de LMSGI - Unidad 2 - Tarea Evaluativa 02</p>
+  </footer>
+</body>
+</html>

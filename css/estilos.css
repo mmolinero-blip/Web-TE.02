@@ -1,0 +1,328 @@
+/* ============================= */
+/* ESTILOS BASE */
+/* ============================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ENLACES */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #ff7b00;
+}
+
+/* BOTONES GENERICOS */
+.boton {
+  display: inline-block;
+  background-color: #ff7b00;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #e86f00;
+}
+
+/* ============================= */
+/* CABECERA Y NAVEGACIÓN */
+/* ============================= */
+.cabecera-principal {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+  padding: 0.5em 0;
+}
+
+.contenedor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 25%;
+  max-width: 180px;
+}
+
+.titulo-pagina {
+  flex: 1;
+  font-size: 2rem;
+  margin-left: 1em;
+}
+
+.menu-navegacion {
+  background-color: #333;
+}
+
+.menu-navegacion ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu-navegacion li {
+  flex: 1;
+  text-align: center;
+}
+
+.menu-navegacion a {
+  display: block;
+  color: #fff;
+  padding: 0.5em 0;
+}
+
+.menu-navegacion a.activo {
+  border: 2px solid #ff7b00;
+  border-radius: 4px;
+}
+
+/* ============================= */
+/* SECCION PRINCIPAL (MAIN) */
+.main-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.main-izquierda {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.main-derecha {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-principal {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+/* ============================= */
+/* SECCIONES GENERICAS */
+.section {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  padding: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+/* TITULOS Y TEXTOS GENERICOS */
+.section h2 {
+  margin-bottom: 0.8em;
+  color: #333;
+}
+
+.section p {
+  margin-bottom: 0.8em;
+  color: #555;
+}
+
+/* ============================= */
+/* CATEGORIA DESTACADA */
+.categoria-destacada {
+  overflow: hidden; /* Para contener el float */
+}
+
+.img-categoria {
+  float: left;
+  width: 30%;
+  margin-right: 1em;
+  border-radius: 0.5em;
+}
+
+.texto-categoria {
+  overflow: hidden;
+}
+
+/* ============================= */
+/* GRID DE ELEMENTOS (PRODUCTOS / NOTICIAS) */
+/* GRID ELEMENTOS: cada cuadro grande */
+/* Contenedor de cards: flex con wrap para 2 por fila */
+/* GRID DE TARJETAS */
+.grid {
+  display: flex;
+  flex-direction: column; /* Una tarjeta debajo de otra */
+  gap: 1.5em;
+}
+
+/* TARJETA */
+.tarjeta {
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  background-color: #fafafa;
+  padding: 1em;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.01);
+}
+
+/* CONTENIDO FLEX: imagen + info + botón */
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+/* IMAGEN */
+.imagen {
+  flex: 0 0 25%;      
+  max-width: 25%;
+  height: auto;
+  border-radius: 0.5em;
+  object-fit: cover;
+}
+
+/* INFORMACIÓN (texto) */
+.informacion {
+  flex: 1 1 60%;      
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;       
+}
+
+.informacion h3 {
+  margin: 0 0 0.5em 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.informacion p {
+  margin: 0;
+  color: #555;
+}
+
+/* BOTÓN */
+.boton {
+  flex: 0 0 auto;       
+  padding: 0.5em 1em;
+  white-space: nowrap;
+}
+
+/* ============================= */
+/* GRID DE CATEGORÍAS */
+/* ============================= */
+.grid-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+/* Cada tarjeta ocupa la mitad del contenedor */
+.grid-categorias .categoria {
+  flex: 1 1 calc(50% - 0.75em);
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  transition: transform 0.3s ease;
+}
+
+.grid-categorias .categoria:hover {
+  transform: scale(1.02);
+}
+
+/* Imagen dentro de cada tarjeta */
+.grid-categorias .categoria img {
+  width: 25%;
+  border-radius: 0.5em;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+/* Información de la categoría (texto + botón) */
+.grid-categorias .categoria h2 {
+  margin: 0 0 0.5em 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.grid-categorias .categoria p {
+  margin: 0 0 1em 0;
+  color: #555;
+}
+
+.grid-categorias .categoria .boton {
+  flex: 0 0 auto;
+}
+/* ============================= */
+/* CONTACTO */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.contact-form {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.contact-info {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+/* ============================= */
+/* PIE DE PAGINA */
+.pie-pagina {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+  font-size: 0.9rem;
+  width: 100%;                  
+  display: block;
+}
+.pie-pagina p {
+  margin: 0.4em 0;
+}
